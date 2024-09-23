@@ -5,20 +5,20 @@
 class Supersim < Formula
   desc "Supersim is a local dev environment for the Superchain"
   homepage "https://github.com/ethereum-optimism/supersim"
-  version "0.0.1-alpha.9"
+  version "0.1.0-alpha.9"
 
   on_macos do
     on_intel do
-      url "https://github.com/ethereum-optimism/supersim/releases/download/0.0.1-alpha.9/supersim_Darwin_x86_64.tar.gz"
-      sha256 "64e088121d35002a2b7e5cc728dec0065c6a42241bf18f2f65c71e7aa04ff421"
+      url "https://github.com/ethereum-optimism/supersim/releases/download/0.1.0-alpha.9/supersim_Darwin_x86_64.tar.gz"
+      sha256 "ad70a626fb71ce3d81e5ba6e1e93464953e5080dcfb9d29e5a0b0f8a272c986b"
 
       def install
         bin.install "supersim"
       end
     end
     on_arm do
-      url "https://github.com/ethereum-optimism/supersim/releases/download/0.0.1-alpha.9/supersim_Darwin_arm64.tar.gz"
-      sha256 "ca1b1429bdb7aae09cd498d163d2f73d92a66742993efbbc9a221d00d17854f8"
+      url "https://github.com/ethereum-optimism/supersim/releases/download/0.1.0-alpha.9/supersim_Darwin_arm64.tar.gz"
+      sha256 "c02755afebf093e48aa4bc3f6508cf8b6afca889981259e42e202b86cc2b3c5d"
 
       def install
         bin.install "supersim"
@@ -29,8 +29,8 @@ class Supersim < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ethereum-optimism/supersim/releases/download/0.0.1-alpha.9/supersim_Linux_x86_64.tar.gz"
-        sha256 "52213cf01c1af574077702a6bea4de2f301bce52bf5e0b8248e8b1f568d953c8"
+        url "https://github.com/ethereum-optimism/supersim/releases/download/0.1.0-alpha.9/supersim_Linux_x86_64.tar.gz"
+        sha256 "f3639a6032efba14dbc25a1379c02340224ba51f55c0a0afbfc680a661cd6c97"
 
         def install
           bin.install "supersim"
@@ -39,8 +39,8 @@ class Supersim < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ethereum-optimism/supersim/releases/download/0.0.1-alpha.9/supersim_Linux_arm64.tar.gz"
-        sha256 "deff4e2d6efaa9dbf5987be9b67abda39063ed70d2762178dff33e7f2fe3ef29"
+        url "https://github.com/ethereum-optimism/supersim/releases/download/0.1.0-alpha.9/supersim_Linux_arm64.tar.gz"
+        sha256 "58a1e008370d284a70ed8d90044924330250200e43b04d247ab133d354045b5b"
 
         def install
           bin.install "supersim"
